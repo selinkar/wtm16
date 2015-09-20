@@ -1,48 +1,56 @@
 <dom-module id="logos-block">
-    <style>
-        :host {
-            display: block;
-            background: #ffffff;
-        }
-
-        :host > .logos-block-wrapper {
-          margin-bottom: 30px;
-        }
-
-        .container .heading {
-          margin-bottom: 20px;
-        }
-
-        .logos-block-title {
-          margin: 20px 0;
-          font-weight: 100;
-          font-size: 22px;
-          letter-spacing: .05em;
-        }
-
-        .logo-item {
-            margin: 0 25px 10px 0;
-        }
-
-        .logo-img {
-            height: 40px;
-            width: 120px;
-        }
-    </style>
     <template>
-        <div class="container relative layout vertical">
-            <template is="dom-repeat" items="{{content}}" as="block">
+        <style>
+            :host {
+                display: block;
+                background: #ffffff;
+            }
+
+            :host > .logos-block-wrapper {
+                margin-bottom: 30px;
+            }
+
+            .container .heading {
+                margin-bottom: 20px;
+            }
+
+            .container .block-link {
+                margin-top: 35px;
+            }
+
+            .logos-block-title {
+                margin: 20px 0;
+                font-weight: 100;
+                font-size: 22px;
+                letter-spacing: .05em;
+            }
+
+            .logo-item {
+                margin: 0 10px 10px;
+            }
+
+            .logo-img {
+                height: 60px;
+                width: 140px;
+            }
+        </style>
+        <div class="container relative layout vertical center">
+            <content></content>
+            <template is="dom-repeat" items="[[logosBlocks]]" as="block">
                 <div class="logos-block-wrapper">
-                    <h5 class="logos-block-title">{{block.title}}</h5>
-                    <div class="wrap layout horizontal">
-                        <template is="dom-repeat" items="{{block.logos}}" as="logo">
-                            <a class="logo-item" href="{{logo.url}}" title="{{logo.name}}">
-                                <iron-image class="logo-img flex" src="{{logo.logoUrl}}" preload fade sizing="contain"></iron-image>
+                    <h5 class="logos-block-title text-center">[[block.title]]</h5>
+                    <div class="wrap layout horizontal center-center">
+                        <template is="dom-repeat" items="[[block.logos]]" as="logo">
+                            <a class="logo-item" href="[[logo.url]]" title="[[logo.name]]" target="_blank">
+                                <iron-image class="logo-img flex" src="[[logo.logoUrl]]" preload fade sizing="contain"></iron-image>
                             </a>
                         </template>
                     </div>
                 </div>
             </template>
+            <a href="/assets/GDG_DevFest_Ukraine_2015_Partnership_Proposition.pdf" class="block-link" target="_blank" onclick="ga('send', 'become-a-partner', 'button', 'click');">
+                <paper-button class="colorful" raised>Become a partner</paper-button>
+            </a>
         </div>
     </template>
 </dom-module>
@@ -51,30 +59,8 @@
     Polymer({
         is: 'logos-block',
         properties: {
-            content: {
-                type: Array
-            }
-        },
-        attached: function() {
-            this.content = [{
-                title: 'General sponsor',
-                logos: [{
-                    name: 'Google',
-                    url: 'https://www.google.com.ua/intl/en/about/',
-                    logoUrl: '../images/partners/google.svg',
-                }]
-            }, {
-                title: 'Diamond sponsors',
-                logos: [{
-                    name: 'Eleks',
-                    url: 'http://eleks.com/',
-                    logoUrl: '../images/partners/eleks.svg'
-                }, {
-                    name: 'SoftServe',
-                    url: 'https://softserve.ua/en/',
-                    logoUrl: '../images/partners/softserve.svg'
-                }]
-            }];
+            source: String,
+            logosBlocks: Array
         }
     });
 </script>
