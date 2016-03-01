@@ -1,0 +1,214 @@
+<link rel="import" href="../../../bower_components/polymer/polymer.html">
+
+<link rel="import" href="../../../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../../../bower_components/iron-flex-layout/iron-flex-layout.html">
+<link rel="import" href="../../../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../../../bower_components/paper-item/paper-icon-item.html">
+<link rel="import" href="../../../bower_components/paper-item/paper-item-body.html">
+<link rel="import" href="../../../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../../../bower_components/google-map/google-map.html">
+
+<dom-module id="map-block">
+    <template>
+        <style include="shared-styles"></style>
+        <style>
+            :host {
+                display: block;
+                padding: 40px 0;
+                position: relative;
+                overflow: hidden;
+                min-height: 300px;
+            }
+
+            google-map,
+            .disable-map-events {
+                @apply(--layout-fit);
+            }
+
+            .container {
+                @apply(--layout-horizontal);
+            }
+
+            .card-wrapper {
+                @apply(--layout-horizontal);
+                @apply(--layout-flex);
+                @apply(--layout-around-justified);
+            }
+
+            .card {
+                --paper-card-header-text: {
+                    color: #FFFFFF;
+                    font-weight: 300;
+                };
+                --paper-content: {
+                    color: var(--primary-text-color);
+                };
+                max-width: 400px;
+                background: #FFFFFF;
+            }
+
+            paper-icon-item {
+                --paper-item-disabled-color: inherit;
+            }
+
+            paper-icon-item iron-icon {
+                --iron-icon-fill-color: var(--default-primary-color);
+            }
+
+            .card .bottom-link {
+                color: var(--secondary-text-color);
+            }
+
+            .header {
+                height: 250px;
+            }
+
+            .header-image {
+                @apply(--layout-fit);
+                width: 100%;
+                background-size: cover;
+                background-position: 50% 50%;
+                transition: background-image 1s ease-in-out;
+                will-change: background-image;
+            }
+
+            .additional-space {
+                display: none;
+            }
+
+            @media (min-width: 961px) {
+
+                :host {
+                                padding: 100px 0;
+                }
+
+                .additional-space {
+
+                                @apply(--layout);
+
+                                @apply(--layout-flex);
+                }
+}
+        </style>
+        <google-map zoom="15" latitude="41.0419318" longitude="29.0090718" styles="[[options]]" disable-zoom="" disable-default-ui="">
+            <google-map-marker latitude="41.0397218" longitude="29.0151718"></google-map-marker>
+        </google-map>
+        <div class="disable-map-events"></div>
+        <div class="container">
+            <div class="additional-space"></div>
+            <div class="card-wrapper">
+                <paper-card class="card">
+                    <div class="header paper-card">
+                        <div class="header-image" style$="background-image: url([[_currentImage]])"></div>
+                        <div class="title-text over-image style-scope paper-card">Bah&#xE7;e&#x15F;ehir &#xDC;niversitesi Be&#x15F;ikta&#x15F; Kamp&#xFC;s&#xFC;</div>
+                    </div>
+                    <div class="paper-card-container">
+                        <div class="card-content list">
+                            <paper-icon-item disabled>
+                                <iron-icon icon="icons:feedback" item-icon=""></iron-icon>
+                                <paper-item-body>Be&#x15F;ikta&#x15F;&apos;ta, vapur ve otob&#xFC;sle ula&#x15F;&#x131;m kolayl&#x131;&#x11F;&#x131;</paper-item-body>
+                            </paper-icon-item>
+                            <paper-icon-item disabled>
+                                <iron-icon icon="icons:location" item-icon=""></iron-icon>
+                                <paper-item-body two-line="">
+                                    <div>&#xC7;&#x131;ra&#x11F;an Caddesi, Osmanpa&#x15F;a Mektebi Sokak No: 4 - 6</div>
+                                    <div secondary="">Be&#x15F;ikta&#x15F;, &#x130;stanbul</div>
+                                </paper-item-body>
+                            </paper-icon-item>
+                        </div>
+                        <div class="card-actions">
+                            <a class="bottom-link" href="https://www.google.com/maps/dir/41.0397218,29.0151718/@41.0397218,29.0151718,18z" target="_blank">
+                                <paper-icon-button icon="icons:directions"></paper-icon-button>
+                            </a>
+                            
+                            <a class="bottom-link" href="http://www.bahcesehir.edu.tr/" target="_blank">
+                                <paper-icon-button icon="icons:link"></paper-icon-button>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </paper-card>
+            </div>
+        </div>
+    </template>
+    <script>
+        (function () {
+            'use strict';
+
+            class MapBlock {
+                beforeRegister() {
+                    let is = this.constructor.name.replace(/\W+/g, '-')
+                        .replace(/([a-z\d])([A-Z])/g, '$1-$2').toLowerCase();
+                    this.is = is;
+                    this.properties = {
+                        images: {
+                            type: Array,
+                            /* jshint ignore:start */
+                            value: ["/images/backgrounds/location_1.jpg","/images/backgrounds/location_2.jpg","/images/backgrounds/location_3.jpg"]
+                            /* jshint ignore:end */
+                        },
+                        options: {
+                            type: String,
+                            value: function () {
+                                return [{
+                                    stylers: [{
+                                        'lightness': 40
+                                    }, {
+                                        'visibility': 'on'
+                                    }, {
+                                        'gamma': 0.9
+                                    }, {
+                                        'weight': 0.4
+                                    }]
+                                }, {
+                                    'elementType': 'labels',
+                                    'stylers': [{
+                                        'visibility': 'on'
+                                    }]
+                                }, {
+                                    'featureType': 'water',
+                                    'stylers': [{
+                                        'color': '#5dc7ff'
+                                    }]
+                                }];
+                            }
+                        },
+                        _currentSourceIndex: {
+                            type: Number,
+                            value: 0
+                        },
+                        _currentTargetIndex: {
+                            type: Number,
+                            value: 0
+                        },
+                        _currentImage: {
+                            type: String
+                        }
+                    };
+                }
+
+                ready() {
+                    this._currentImage = this.images[this._currentSourceIndex];
+                    if (this.images.length > 1) {
+                        var that = this;
+                        setInterval(function () {
+                            that.nextImage();
+                        }, 4000);
+                    }
+                }
+
+                previousImage() {
+                    this._currentSourceIndex = (this._currentSourceIndex > 0) ? this._currentSourceIndex - 1 : this.images.length - 1;
+                    this._currentImage = this.images[this._currentSourceIndex];
+                }
+
+                nextImage() {
+                    this._currentSourceIndex = (this._currentSourceIndex < this.images.length - 1) ? this._currentSourceIndex + 1 : 0;
+                    this._currentImage = this.images[this._currentSourceIndex];
+                }
+            }
+
+            Polymer(MapBlock);
+        })();
+    </script>
+</dom-module>

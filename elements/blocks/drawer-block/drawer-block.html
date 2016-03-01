@@ -1,0 +1,119 @@
+<link rel="import" href="../../../bower_components/polymer/polymer.html">
+
+<link rel="import" href="../../../bower_components/iron-flex-layout/iron-flex-layout.html">
+<link rel="import" href="../../../bower_components/iron-image/iron-image.html">
+<link rel="import" href="../../../bower_components/paper-scroll-header-panel/paper-scroll-header-panel.html">
+<link rel="import" href="../../../bower_components/paper-toolbar/paper-toolbar.html">
+<link rel="import" href="../../../bower_components/paper-menu/paper-menu.html">
+
+<dom-module id="drawer-block">
+    <template>
+        <style include="shared-styles"></style>
+        <style>
+            :host {
+                display: block;
+                z-index: 9;
+                --paper-toolbar-background: var(--default-primary-color);
+            }
+
+            .panel {
+                height: 100%;
+            }
+
+            .logo {
+                margin-top: 15px;
+                height: 40px;
+                width: 130px;
+            }
+
+            .bottom {
+                font-size: 14px;
+                font-weight: 400;
+                color: var(--text-primary-color);
+            }
+
+            .location {
+                display: block;
+                color: var(--dark-primary-color);
+            }
+
+            .navigation {
+                background: var(--secondary-background-color);
+            }
+
+            .navigation-link {
+                padding: 0 16px;
+                min-height: 48px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                text-decoration: none;
+                color: var(--primary-text-color);
+                -webkit-font-smoothing: antialiased;
+                text-rendering: optimizeLegibility;
+            }
+
+            .navigation-link {
+                @apply(--layout-horizontal);
+                @apply(--layout-center);
+            }
+
+            .selected {
+                background: #eaeaea;
+            }
+        </style>
+        <paper-scroll-header-panel class="panel">
+            <!-- Drawer Toolbar -->
+            <paper-toolbar class="tall">
+                <div class="top">
+                    <iron-image class="logo" src="/images/logo-white.svg" sizing="contain" alt="WTM Istanbul 2016"></iron-image>
+                </div>
+                <div class="bottom">
+                    <span class="dates">3 Nisan 2016</span>
+                    <span class="location">Be&#x15F;ikta&#x15F;, &#x130;stanbul</span>
+                </div>
+            </paper-toolbar>
+
+            <!-- Navigation -->
+            <nav>
+                <paper-menu class="navigation list" attr-for-selected="data-route" selected="{{route}}" selected-class="selected" on-iron-select="_onDataRouteClick">
+                    
+                    <a class="navigation-link" data-route="home" href="/">Home</a>
+                    
+                    <a class="navigation-link" data-route="Kay&#x131;t" href="http://www.meetup.com/GDGIstanbul/events/229249368/">Kay&#x131;t</a>
+                    
+                    <a class="navigation-link" data-route="WTM Istanbul 2014" href="http://2014.wtmistanbul.com">WTM Istanbul 2014</a>
+                    
+                    <a class="navigation-link" data-route="WTM Istanbul 2015" href="http://2015.wtmistanbul.com">WTM Istanbul 2015</a>
+                    
+                </paper-menu>
+            </nav>
+        </paper-scroll-header-panel>
+
+    </template>
+    <script>
+        (function () {
+            'use strict';
+
+            class DrawerBlock {
+                beforeRegister() {
+                    let is = this.constructor.name.replace(/\W+/g, '-')
+                        .replace(/([a-z\d])([A-Z])/g, '$1-$2').toLowerCase();
+                    this.is = is;
+                    this.properties = {
+                        route: {
+                            type: String,
+                            notify: true
+                        }
+                    };
+                }
+
+                _onDataRouteClick() {
+                    document.querySelector('#paperDrawerPanel').closeDrawer();
+                }
+            }
+
+            Polymer(DrawerBlock);
+        })();
+    </script>
+</dom-module>

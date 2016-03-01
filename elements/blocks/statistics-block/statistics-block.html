@@ -1,0 +1,87 @@
+<link rel="import" href="../../../bower_components/polymer/polymer.html">
+
+<dom-module id="statistics-block">
+    <template>
+        <style include="shared-styles"></style>
+        <style>
+            :host {
+                display: block;
+                background: var(--default-primary-color);
+                color: var(--text-primary-color);
+            }
+
+            .container {
+                @apply(--layout-horizontal);
+                @apply(--layout-wrap);
+            }
+
+            .statistics-element {
+                @apply(--layout-vertical);
+                @apply(--layout-center-center);
+                text-align: center;
+            }
+
+            .counter {
+                font-size: 3em;
+                font-weight: 200;
+            }
+
+            .caption {
+                font-size: .85em;
+            }
+
+            @media (max-width: 600px) {
+
+                .statistics-element {
+                                width: 50%;
+                }
+
+                .statistics-element:nth-child(1),
+                .statistics-element:nth-child(2) {
+                                margin-bottom: 40px;
+                }
+}
+
+            @media (min-width: 601px) {
+
+                .statistics-element {
+
+                                @apply(--layout-flex);
+                }
+}
+        </style>
+        <div class="container">
+            
+            <div class="statistics-element">
+                <span class="counter">392</span>
+                <span class="caption">Kat&#x131;l&#x131;mc&#x131;</span>
+            </div>
+            
+            <div class="statistics-element">
+                <span class="counter">59</span>
+                <span class="caption">Kad&#x131;n konu&#x15F;mac&#x131;</span>
+            </div>
+            
+            <div class="statistics-element">
+                <span class="counter">5</span>
+                <span class="caption">Paralel Oturum</span>
+            </div>
+            
+        </div>
+    </template>
+    <script>
+        (function() {
+            'use strict';
+
+            class StatisticsBlock {
+                beforeRegister() {
+                    let is = this.constructor.name.replace(/\W+/g, '-')
+                        .replace(/([a-z\d])([A-Z])/g, '$1-$2').toLowerCase();
+                    this.is = is;
+                }
+            }
+
+            Polymer(StatisticsBlock);
+        })();
+    </script>
+</dom-module>
