@@ -26,8 +26,9 @@
 <link rel="import" href="pages/home-page.html">
 <link rel="import" href="pages/blog-page.html">
 <link rel="import" href="pages/post-page.html">
-<link rel="import" href="pages/speakers-page.html">
-<link rel="import" href="pages/schedule-page.html">
+<!-- TODO -->
+<!-- <link rel="import" href="pages/speakers-page.html"> -->
+<!-- <link rel="import" href="pages/schedule-page.html"> -->
 
 
 <dom-module id="hoverboard-app">
@@ -55,7 +56,7 @@
                     <blog-page class="Page" data-route="blog" posts="{{posts}}" hero-settings="{{heroSettings}}"></blog-page>
                     <post-page class="Page" data-route="post" post-id="[[params.id]]" posts="{{posts}}" hero-settings="{{heroSettings}}"></post-page>
                     <speakers-page class="Page" data-route="speakers" speakers="{{speakers}}" hero-settings="{{heroSettings}}" speaker-id="[[params.id]]"></speakers-page>
-                    <schedule-page class="Page" data-route="schedule" schedule="{{schedule}}" sessions="{{sessions}}" hero-settings="{{heroSettings}}" session-id="[[params.id]]"></schedule-page>
+                    <!-- TODO <schedule-page class="Page" data-route="schedule" schedule="{{schedule}}" sessions="{{sessions}}" hero-settings="{{heroSettings}}" session-id="[[params.id]]"></schedule-page> -->
                 </neon-animated-pages>
             </paper-scroll-header-panel>
         </paper-drawer-panel>
