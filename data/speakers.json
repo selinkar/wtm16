@@ -1,0 +1,157 @@
+[{
+    "id": 9,
+    "featured": true,
+    "name": "Mandy Waite",
+    "title": "Developer Relations Engineer",
+    "company": "Google",
+    "country": "UK",
+    "photoUrl": "../../images/people/mandy_waite.jpg",
+    "bio": "Based in London, UK, Mandy is a Developer Relations Engineer at Google specializing in Container and Cloud technologies and working to make the world a better place for developers building applications for the Cloud. Before Google Mandy worked at Sun Microsystems on performance and scalability of Java and JavaEE and on porting Open Source apps to OpenSolaris. In her spare time Mandy is learning Japanese and likes to play the guitar.",
+    "tags": ["Cloud", "Firebase", "gRPC", "Kubernetes", "Docker"],
+    "socials": [{
+        "name": "Google+",
+        "icon": "gplus",
+        "link": "https://plus.google.com/+MandyWaite"
+    }, {
+        "name": "Twitter",
+        "icon": "twitter",
+        "link": "https://twitter.com/tekgrrl"
+    }, {
+        "name": "GitHub",
+        "icon": "github",
+        "link": "https://github.com/tekgrrl"
+    }]
+}, {
+    "id": 14,
+    "name": "Jana Moudrá",
+    "title": "Co-Founder",
+    "company": "Juicymo",
+    "country": "Czech Republic",
+    "photoUrl": "../../images/people/jana_moudra.jpg",
+    "bio": "GDE (Google Developer Expert) for Dart. Jana is a passionate developer and modern web and mobile technology evangelist. She is an event organiser for GDG Prague, where she arranges events for developers including public lectures, code labs and hackathons – covering a wide range of subjects including technologies Dart or Android. She loves to help other developers and spread the knowledge about these technologies. <br/><br/>Jana co-founded a company called Juicymo, where she works on juicy apps and products.",
+    "tags": ["Web", "Dart"],
+    "badges": [{
+        "name": "GDE",
+        "description": "Dart Google Developer Expert",
+        "link": "https://developers.google.com/experts/people/jana-moudr"
+    }, {
+        "name": "GDG",
+        "description": "Google Developers Group Prague",
+        "link": "https://developers.google.com/groups/chapter/111919016509847766513/"
+    }],
+    "socials": [{
+        "name": "Google+",
+        "icon": "gplus",
+        "link": "https://plus.google.com/+JanaMoudrá"
+    }, {
+        "name": "LinkedIn",
+        "icon": "linkedin",
+        "link": "https://cz.linkedin.com/in/janamoudra"
+    }, {
+        "name": "Twitter",
+        "icon": "twitter",
+        "link": "https://twitter.com/Janamou"
+    }, {
+        "name": "Blog",
+        "icon": "website",
+        "link": "http://www.moudra.net/"
+    }]
+}, {
+    "id": 1,
+    "featured": true,
+    "name": "Said Tahsin Dane",
+    "title": "Mobile Coder",
+    "company": "Startup Digest",
+    "country": "Turkey",
+    "photoUrl": "../../images/people/said_tahsine_dane.jpg",
+    "bio": "GDE (Google Developer Expert) for Android. Experience with Android (since Cupcake), Google Glass, Android Wear, and (even on!) iOS. Very passionate developer who tries to live on the bleeding edge of technology. Also very interested in mobile UX. <br/><br/>Active member and organizer at GDG Istanbul enjoying organizing various conferences and hackathons. Also a part of GDG[X] - a GDG related open-source organization.",
+    "tags": ["Android", "Material Design"],
+    "badges": [{
+        "name": "GDE",
+        "description": "Android Google Developer Expert",
+        "link": "https://developers.google.com/experts/people/said-tahsin-dane"
+    }, {
+        "name": "GDG",
+        "description": "Google Developers Group Istanbul",
+        "link": "https://developers.google.com/groups/chapter/100514812580249787371/"
+    }],
+    "socials": [{
+        "name": "Website",
+        "icon": "website",
+        "link": "http://www.tasomaniac.com/"
+    }, {
+        "name": "Twitter",
+        "icon": "twitter",
+        "link": "https://twitter.com/tasomaniac"
+    }, {
+        "name": "GitHub",
+        "icon": "github",
+        "link": "https://github.com/tasomaniac"
+    }]
+}, {
+    "id": 16,
+    "name": "Kseniia Shumelchyk",
+    "title": "Software developer",
+    "company": "SoftServe",
+    "country": "Ukraine",
+    "photoUrl": "../../images/people/kseniia_shumelchyk.jpg",
+    "bio": "Kseniia is working as software developer at SoftServe as well she has an experience of working on open-source project during Google Summer of Code. Kseniia is leading Women Techmakers Ukraine and GDG Dnipropetrovsk communities for 3 years. She participated in number of international conferences: GOTO Aarhus, Google I/O and GDG Leaders Summit and was a speaker at Droidcon Berlin, Women Techmakers Istanbul, GDG DevFest Ukraine and Women Techmakers Global TechTalk. This year Kseniia was selected as Anita Borg Scholar Receipient that aimed to support women with outstanding results in Computer Science. Kseniia is a big fan of innovative technologies in education and software development. She is creator of Android application for Women Techmakers Community.",
+    "tags": ["Android", "BLE", "Community"],
+    "badges": [{
+        "name": "GDG",
+        "description": "Google Developers Group Dnipropetrovsk",
+        "link": "https://developers.google.com/groups/chapter/116033068768596939209/"
+    }, {
+        "name": "WTM",
+        "description": "Women Techmakers Ukraine",
+        "link": "http://www.wtm-ukraine.com/"
+    }],
+    "socials": [{
+        "name": "Google+",
+        "icon": "gplus",
+        "link": "https://plus.google.com/u/0/104006672956574838559"
+    }, {
+        "name": "LinkedIn",
+        "icon": "linkedin",
+        "link": "http://ua.linkedin.com/pub/kseniia-shumelchyk/49/26/935"
+    }, {
+        "name": "Facebook",
+        "icon": "facebook",
+        "link": "https://www.facebook.com/kseniya.shumelchyk"
+    }]
+}, {
+    "id": 21,
+    "name": "Buşra Deniz",
+    "title": "Mobile Software Developer",
+    "company": "Netas",
+    "country": "Turkey",
+    "photoUrl": "../../images/people/busra_deniz.jpg",
+    "bio": "Busra Deniz is a Software Engineer who has a keen interest in developing high-quality software by applying agile principles and methodologies, especially Scrum.<br/><br/>She is a Certificated Scrum Master and mobile engineer in Netas. Currently, working on an international project that provides iOS and Android SDKs those allow other programmers to develop their applications, which are capable of voice call, video call and IM using WebRTC.<br/><br/>Besides being co-organizer in two different community, Google Developer Group and WomenTechMakers İstanbul, she enjoys voluntarily organizing and speaking at developer events. Also, she believes in sharing knowledge and collaborating with the other people through these events, will come hand in hand with innovation and new perspectives. She always loves being part of a team and thinks that individual commitment to a team is the key to success. As a result of that she is a big fan of agile methodologies including Scrum, TDD and XP. Besides agile, she is also got excited almost every new technology in mobile platforms. And, as a software engineer, her goal is delivering software with high quality and robust architecture. In order to achieve that she highly relies on unit testing and mobile test automation.",
+    "tags": ["Web", "WEB RTC"],
+    "badges": [{
+        "name": "GDG",
+        "description": "Google Developers Group Istanbul",
+        "link": "https://developers.google.com/groups/chapter/100514812580249787371/"
+    }, {
+        "name": "WTM",
+        "description": "Women Tech Makers Istanbul",
+        "link": "https://developers.google.com/groups/chapter/100514812580249787371/"
+    }],
+    "socials": [{
+        "name": "Google+",
+        "icon": "gplus",
+        "link": "https://plus.google.com/u/0/107161766252148547668"
+    }, {
+        "name": "LinkedIn",
+        "icon": "linkedin",
+        "link": "https://tr.linkedin.com/in/busradeniz"
+    }, {
+        "name": "Twitter",
+        "icon": "twitter",
+        "link": "https://twitter.com/busradeniz"
+    }, {
+        "name": "Blog",
+        "icon": "website",
+        "link": "http://www.busradeniz.com/"
+    }]
+}]
