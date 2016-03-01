@@ -118,7 +118,7 @@
         <iron-image class="placeholder-color toolbar-image" src="[[backgroundImage]]" sizing="cover" preload
                     fade></iron-image>
         <div class="image-overlay" show$={{backgroundImage}}></div>
-        <div class="container">
+        <div class="container" cascaded>
             <paper-toolbar class="tall">
                 <paper-icon-button class="menu-toggle" icon="icons:menu" on-tap="togglePanel"
                                    hidden$="{{!smallScreen}}"></paper-icon-button>

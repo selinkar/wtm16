@@ -2,7 +2,6 @@
 
 <link rel="import" href="../../../bower_components/iron-flex-layout/iron-flex-layout.html">
 <link rel="import" href="../../../bower_components/paper-button/paper-button.html">
-<link rel="import" href="../../../bower_components/paper-dialog/paper-dialog.html">
 
 <dom-module id="tickets-block">
     <template>
@@ -76,14 +75,6 @@
                 margin-top: 30px;
             }
 
-            paper-dialog {
-                background: #fff;
-            }
-
-            paper-dialog .buttons {
-                color: initial;
-            }
-
             @media (min-width: 601px) {
                 .price-block-wrapper {
                     @apply(--layout-horizontal);
@@ -112,17 +103,12 @@
                 {% endfor %}
             </div>
             <span class="details">{$ ticketsBlock.details $}</span>
-            <div class="block">
-                <paper-button class="white border-button open-dialog-button" on-tap="openTicketsDialog">Buy a ticket
+            <div>
+                <paper-button class="white border-button">
+                    <a href="http://www.meetup.com/GDGIstanbul/events/229249368/">Bilet Al</a>
                 </paper-button>
             </div>
         </div>
-        <paper-dialog id="ticketsDialog" entry-animation="scale-up-animation" exit-animation="fade-out-animation" modal>
-            <p>We have run out all our tickets</p>
-            <div class="buttons">
-                <paper-button dialog-confirm>Close</paper-button>
-            </div>
-        </paper-dialog>
     </template>
     <script>
         (function () {
@@ -135,18 +121,18 @@
                     this.is = is;
                 }
 
-                openTicketsDialog() {
-                    this.fire('iron-signal', {
-                        name: 'track-event',
-                        data: {
-                            category: 'button',
-                            action: 'click',
-                            label: 'group',
-                            value: 'buy-a-ticket'
-                        }
-                    });
-                    this.$.ticketsDialog.open();
-                }
+                // openTicketsDialog() {
+                //     this.fire('iron-signal', {
+                //         name: 'track-event',
+                //         data: {
+                //             category: 'button',
+                //             action: 'click',
+                //             label: 'group',
+                //             value: 'buy-a-ticket'
+                //         }
+                //     });
+                //     // this.$.ticketsDialog.open();
+                // }
             }
 
             Polymer(TicketsBlock);

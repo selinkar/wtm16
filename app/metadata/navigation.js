@@ -5,16 +5,26 @@ module.exports = {
         text: 'Home',
         heroSettings: {
             backgroundColor: '#00BCD4',
-            backgroundImage: '/images/backgrounds/home.png',
+            backgroundImage: '',
             fontColor: '#FFFFFF',
-            tabBarColor: '#FFFFFF',
-            video: {
-                title: 'GDG DevFest Ukraine 2015',
-                youtubeId: '_yhIH9wb3hE',
-                text: 'Watch the promo-video'
-            }
+            tabBarColor: '#FFFFFF'
         }
     }, {
+        route: 'Kayıt',
+        permalink: 'http://www.meetup.com/GDGIstanbul/events/229249368/',
+        text: 'Kayıt'
+    }, {
+        route: 'WTM Istanbul 2014',
+        permalink: 'http://2014.wtmistanbul.com',
+        text: 'WTM Istanbul 2014'
+    }, {
+        route: 'WTM Istanbul 2015',
+        permalink: 'http://2015.wtmistanbul.com',
+        text: 'WTM Istanbul 2015'
+    }]
+};
+
+/*, {
         route: 'blog',
         permalink: '/blog',
         text: 'Blog',
@@ -42,5 +52,4 @@ module.exports = {
             fontColor: '#FFFFFF',
             tabBarColor: '#FFFFFF'
         }
-    }]
-};
+    }*/

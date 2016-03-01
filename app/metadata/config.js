@@ -4,13 +4,13 @@ module.exports = {
     baseurl: '',
     url: 'http://localhost',
     // Google Analytics code
-    trackerCode: 'YOUR_GOOGLE_ANALYTICS_TRACKING_CODE',
+    trackerCode: 'UA-41931868-3',
     // Google Webmaster Tools verification code
-    webtoolsCode: 'YOUR_WEBTOOLS_CODE',
+    webtoolsCode: '-pfbfHrfDSfuqreIuR1SiPO2J64wDEjqh2bOZr4BNRw',
     // Mailchimp subscribe
     mailchimp: {
-        url: 'https://gdg.us11.list-manage.com/subscribe/post?u=b7e853a79164ddfdbda3ed77b&amp;id=7993e39fbe',
-        name: 'b_b7e853a79164ddfdbda3ed77b_7993e39fbe'
+        url: 'http://www.meetup.com/GDGIstanbul/join/',
+        name: 'meetup'
     },
-    disqusShortName: 'YOUR_DISQUS_SHORT_NAME'
+    disqusShortName: 'wtm16'
 };

@@ -2,55 +2,37 @@ module.exports = {
     footer: {
         blocks: [
             {
-                title: 'For visitors',
+                title: 'Linkler',
                 links: [
                     {
-                        text: 'Google Developers',
-                        url: 'https://developers.google.com/',
+                        text: 'WTM Istanbul 2014',
+                        url: 'http://2014.wtmistanbul.com/',
                         newTab: true
-                    },
-                    {
-                        text: 'GDG DevFest Ukraine 2013',
-                        url: 'http://gdg-devfest-ua.appspot.com/',
+                    }, {
+                        text: 'WTM Istanbul 2015',
+                        url: 'http://2015.wtmistanbul.com/',
                         newTab: true
-                    },
-                    {
-                        text: 'GDG DevFest Ukraine 2014',
-                        url: 'http://devfest.gdg.org.ua/2014/',
-                        newTab: true
-                    },
-                    {
+                    }, {
                         text: 'Code of Conduct',
                         url: '/code-of-conduct',
                     }
                 ]
-            },
-            {
-                title: 'For partners',
+            }, {
+                title: 'Sponsorluk',
                 links: [
                     {
-                        text: 'Partnership Proposition',
-                        url: '/assets/GDG_DevFest_Ukraine_2015_Partnership_Proposition.pdf',
-                    },
-                    {
-                        text: 'Media Kit',
-                        url: 'http://bit.ly/dfua-media',
-                        newTab: true
-                    },
-                    {
-                        text: 'Media Accreditation',
-                        url: 'https://docs.google.com/forms/d/1sOjuv7rv77JXq2jPBdh3tg-O4CV8HpLTED5cjJBxnG8/viewform',
-                        newTab: true
+                        text: 'Sponsorluk Dökümanı',
+                        url: '/assets/wtm_istanbul_2016_sponsorluk.pdf',
                     }
                 ]
             }
         ],
         contactBlock: {
-            title: 'Contact us',
+            title: 'İletişim',
             links: [
                 {
-                    text: 'devfest@google.com',
-                    url: 'mailto:devfest@google.com'
+                    text: 'wtm@gdgistanbul.com',
+                    url: 'mailto:wtm@gdgistanbul.com'
                 }
             ]
         }

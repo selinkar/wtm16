@@ -1,30 +1,30 @@
-module.exports = {
-    title: 'GDG DevFest Season 2015',
-    description: 'The biggest Google tech conference in Ukraine carefully crafted for you by GDG community! All about Android, Web and Cloud from the world experts',
-    keywords: 'event, gdg, gde, devfest, google, programming, android, chrome, polymer, developers, cloud',
+ module.exports = {
+    title: 'WTM Istanbul 2016',
+    description: 'Liderlik etme sırası bizde!',
+    keywords: 'event, wtm, womentechmakers, wtmistanbul, gdgistanbul, gdg, gde, devfest, google, programming, android, chrome, polymer, developers, cloud',
     charset: 'utf-8',
     lang: 'en',
     // Add to homescreen for Chrome on Android
-    applicationName: 'GDG DevFest Season 2015',
+    applicationName: 'WTM Istanbul 16',
     // Add to homescreen for Safari on iOS
-    appleMobileWebAppTitle: 'GDG DevFest Season 2015',
+    appleMobileWebAppTitle: 'WTM Istanbul 16',
 
     // Event details
-    dates: 'October 23-24, 2015',
+    dates: '3 Nisan 2016',
     location: {
-        title: 'Pivdennyi Expo Center',
-        description: 'Newly built Pivdennyi Expo is a long-awaited exhibition center in Lviv, which can fulfill the needs of the large-scale event',
-        short: 'Lviv, Ukraine',
-        address: 'Shchyretska St, 36',
-        link: 'https://www.facebook.com/expopivdennij',
+        title: 'Bahçeşehir Üniversitesi Beşiktaş Kampüsü',
+        description: 'Beşiktaş\'ta, vapur ve otobüsle ulaşım kolaylığı',
+        short: 'Beşiktaş, İstanbul',
+        address: 'Çırağan Caddesi, Osmanpaşa Mektebi Sokak No: 4 - 6',
+        link: 'http://www.bahcesehir.edu.tr/',
         pointer: {
-            latitude: 49.809841,
-            longitude: 23.972805,
+            latitude: 41.0397218,
+            longitude: 29.0151718,
             zoom: 15
         },
         mapCenter: {
-            latitude: 49.809841,
-            longitude: 23.982805
+            latitude: 41.0419318,
+            longitude: 29.0090718
         },
         images: ['/images/backgrounds/location_1.jpg', '/images/backgrounds/location_2.jpg', '/images/backgrounds/location_3.jpg']
     },
@@ -32,27 +32,22 @@ module.exports = {
     // Contacts
     social: {
         twitter: {
-            nickname: 'GDGLviv',
-            url: 'https://twitter.com/gdglviv'
+            nickname: 'WTM Istanbul',
+            url: 'https://twitter.com/wtmistanbul'
         },
         gplus: {
-            nickname: '102444623953913144164',
-            url: 'https://plus.google.com/102444623953913144164'
+            nickname: 'WTM Istanbul',
+            url: 'https://plus.google.com/117144156321282246968/posts'
         },
         facebook: {
-            nickname: 'GDGLviv',
-            url: 'https://www.facebook.com/GDGLviv'
-        },
-        // Linkedin company
-        linkedin: {
-            nickname: 'google-developers-group-lviv',
-            url: 'https://www.linkedin.com/company/google-developers-group-lviv'
+            nickname: 'WTM Istanbul',
+            url: 'https://www.facebook.com/wtmistanbul'
         }
     },
-    hashtag: 'dfua',
-    email: 'devfest@gdg.com',
+    hashtag: 'wtmist',
+    email: 'wtm@gdgistanbul.com',
     organizer: {
-        name: 'GDG Lviv',
-        blog: 'http://lviv.gdg.org.ua'
+        name: 'GDG Istanbul',
+        blog: 'http://www.gdgistanbul.com'
     }
 };
