@@ -1,0 +1,14 @@
+{
+  "name": "font-roboto",
+  "homepage": "https://github.com/StartPolymer/font-empty",
+  "version": "1.1.0",
+  "_release": "1.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.1.0",
+    "commit": "a5429787b734bb12f94fef732718f9471f727a79"
+  },
+  "_source": "git://github.com/StartPolymer/font-empty.git",
+  "_target": "1.1.x",
+  "_originalSource": "StartPolymer/font-empty"
+}
