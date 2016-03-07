@@ -37,5 +37,5 @@ module.exports = {
     socialFeed: {
         source: ''
     },
-    partnershipProposition: '/assets/wtm_istanbul_2016_sponsorluk.pdf'
+    partnershipProposition: '/images/wtm_istanbul_2016_sponsorluk.pdf'
 };
