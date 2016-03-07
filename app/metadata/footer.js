@@ -22,7 +22,7 @@ module.exports = {
                 links: [
                     {
                         text: 'Sponsorluk Dökümanı',
-                        url: '/assets/wtm_istanbul_2016_sponsorluk.pdf',
+                        url: '/images/wtm_istanbul_2016_sponsorluk.pdf',
                     }
                 ]
             }
